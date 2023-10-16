@@ -10,4 +10,4 @@ def auth_login():
 
 @auth_blueprint.route('/logout')
 def auth_logout():
-    return render_template('logout.html')
+    return render_template('profile.html')
