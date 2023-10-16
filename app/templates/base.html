@@ -10,9 +10,9 @@
 <body>
 <nav>
     <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="{url_for('main_blueprint.index')}">Home</a></li>
+        <li><a href="{url_for('auth_blueprint.login')}">signin</a></li>
+        <li><a href="{url_for('auth_blueprint.logout')}">signup</a></li>
     </ul>
 </nav>
 {% block body %}{% endblock %}

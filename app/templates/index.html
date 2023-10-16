@@ -1,10 +1,32 @@
-{% extends "base.html" %}
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
+    <header>
+        <!-- Vous pouvez ajouter une barre de navigation ici -->
+    </header>
 
+    <main>
+        <div class="gallery">
+            <img src="{{ url_for('static', filename='/assets/image_1.png') }}" alt="House 1">
+            <img src="{{ url_for('static', filename='assets/image_2.png') }}" alt="House 1">
+            <img src="{{ url_for('static', filename='assets/image_3.png') }}" alt="House 1">
+            <img src="{{ url_for('static', filename='assets/image_4.png') }}" alt="House 1">
+            <img src="{{ url_for('static', filename='assets/image_5.png') }}" alt="House 1">
+            <img src="{{ url_for('static', filename='assets/image_6.png') }}" alt="House 1">
+            <img src="{{ url_for('static', filename='assets/image_7.png') }}" alt="House 1">
+            <img src="{{ url_for('static', filename='assets/image_1.png') }}" alt="House 1">
+            <!-- Ajoutez plus d'images comme nécessaire -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Vous pouvez ajouter un pied de page ici -->
+    </footer>
 </body>
 </html>
